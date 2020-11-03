@@ -1,3 +1,4 @@
+---
 - name: Crear User AD
   win_domain_user:
     name: Prueba
