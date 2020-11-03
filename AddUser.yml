@@ -1,16 +1,4 @@
----
-- name: Crear User AD
-  win_domain_user:
-    name: Prueba
-    firstname: juan
-    surname: Perez
-    company: NexCo
-    password: 1234
-    state: present
-    groups:
-      - Domain Admins
-    street: 123 4th St.
-    city: Sometown
-    state_province: IN
-    postal_code: 12345
-    country: US
+- hosts:
+    - all
+  tasks:
+    - action: ping
