@@ -1,0 +1,17 @@
+- name: Crear usuario AD
+  community.windows.win_domain_user:
+    name: Prueba
+    firstname: Juan
+    surname: Perez
+    company: NewCo
+    password: 1234
+    state: present
+    groups:
+      - Domain Admins
+    street: 123 4th St.
+    city: Sometown
+    state_province: IN
+    postal_code: 12345
+    country: US
+    attributes:
+      telephoneNumber: 555-123456
