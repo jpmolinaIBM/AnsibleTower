@@ -1,3 +1,4 @@
+---
 - name: Crear usuario AD
   community.windows.win_domain_user:
     name: Prueba
