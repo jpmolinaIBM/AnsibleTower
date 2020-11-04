@@ -11,4 +11,4 @@
       application_pool: "DefaultAppPool"
       physical_path: C:\inetpub\logs\LogFiles
       parameters: logfile.directory:c:\sites\logs
-    register: website
+      register: website
