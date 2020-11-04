@@ -1,14 +1,14 @@
 - hosts:
     - all
   tasks:
-- name: Default IIS site
-  win_iis_website:
-    name: "Default Web site"
-    state: stopped
-    port: 80
-    ip: 127.0.0.1
-    hostname: VISION-VEEAM
-    application_pool: "DefaultAppPool"
-    physical_path: C:\inetpub\logs\LogFiles
-    parameters: logfile.directory:c:\sites\logs
-  register: website
+    - name: Default IIS site
+        win_iis_website:
+        name: "Default Web site"
+        state: stopped
+        port: 80
+        ip: 127.0.0.1
+        hostname: VISION-VEEAM
+        application_pool: "DefaultAppPool"
+        physical_path: C:\inetpub\logs\LogFiles
+        parameters: logfile.directory:c:\sites\logs
+    register: website
