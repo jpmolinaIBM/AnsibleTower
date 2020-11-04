@@ -4,6 +4,6 @@
     - name: Stop {{ app_pool_name }} Website
       win_iis_website:
         name: "{{ app_pool_name }}"
-        state: stopped
+        state: "{{ action }}"
         port: 80
       register: website
