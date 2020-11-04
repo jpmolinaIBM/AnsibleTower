@@ -1,3 +1,4 @@
+---
 - name: Default IIS site
   win_iis_website:
     name: "Default Web site"
