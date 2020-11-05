@@ -1,9 +1,9 @@
 - hosts:
     - all
   tasks:
-    - name: Add a HTTPS binding and select certificate to use
+    - name: Add a HTTPS binding and select certificate to use on {{ site }}
       win_iis_webbinding:
-        name: Default Web Site
+        name: "{{ Site }}"
         protocol: https
-        certificate_hash: B0D0FA8408FC67B230338FCA584D03792DA73F4C
+        certificate_hash: "{{ HASH }}"
         state: present
