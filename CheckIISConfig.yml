@@ -2,4 +2,4 @@
     - all
   tasks:
     - name: run netstat and return Ethernet stats 
-      win_command: appcmd list site "Default Web Site"
+      win_command: c:\Windows\System32\inetsrv\appcmd list site "Default Web Site"
