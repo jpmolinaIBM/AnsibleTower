@@ -2,4 +2,4 @@
     - all
   tasks:
     - name: Create backup IIS {{ backup_name }} 
-      win_command: %windir%\system32\inetsrv\appcmd.exe add backup "{{ backup_name }}"
+      win_command: C:\windows\system32\inetsrv\appcmd.exe add backup "{{ backup_name }}"
