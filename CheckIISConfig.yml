@@ -1,5 +1,5 @@
 - hosts:
     - all
   tasks:
-    - name: run netstat and return Ethernet stats 
-      win_command: c:\Windows\System32\inetsrv\appcmd list site "Default Web Site"
+    - name: Check configuration {{ site }} 
+      win_command: c:\Windows\System32\inetsrv\appcmd list site "{{ site }}"
